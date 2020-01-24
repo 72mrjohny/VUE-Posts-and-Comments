@@ -123,12 +123,11 @@
   font-family: "Signika", sans-serif;
   background-color: #feffa8e3;
   color: #000000;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding: 20px;
   margin: 3px;
   text-shadow: none;
   border: 1px solid #080808;
-  max-width: 100%;
+  width: 98%;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -165,11 +164,13 @@
     margin-right: 2vw;
   }
   .list-wrapper .post {
-    width: 95%;
     margin: 0 auto;
   }
-  .comment--email {
-    font-size: 1rem;
+  .comment {
+    padding: 3%;
+  }
+  .comment .comment--email {
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

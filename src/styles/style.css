@@ -133,13 +133,14 @@
           box-sizing: border-box;
 }
 
-.comment .comment--email {
+.comment p.comment--email {
   text-align: right;
   font-size: 1.2rem;
+  margin: 10px;
   overflow: hidden;
 }
 
-.comment .comment--description {
+.comment p.comment--description {
   font-size: 0.9rem;
   overflow: hidden;
 }
@@ -169,8 +170,9 @@
   .comment {
     padding: 3%;
   }
-  .comment .comment--email {
+  .comment p.comment--email {
     font-size: 0.9rem;
+    margin: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

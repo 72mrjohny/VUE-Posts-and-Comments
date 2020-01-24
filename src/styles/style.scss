@@ -114,13 +114,13 @@
     width: 98%;
     overflow: hidden;
     box-sizing: border-box;
-    .comment--email {
+    p.comment--email {
         text-align: right;
         font-size: 1.2rem;
-      
+        margin: 10px;
         overflow: hidden;
       }
-    .comment--description {
+    p.comment--description {
         font-size: 0.9rem;
         overflow: hidden;
     }
@@ -153,8 +153,9 @@
     }
     .comment{
       padding: 3%;
-      .comment--email {
+      p.comment--email {
         font-size: 0.9rem;
+        margin: 5px;
       }
     }
   }

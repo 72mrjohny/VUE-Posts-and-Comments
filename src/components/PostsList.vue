@@ -7,7 +7,7 @@
 
     <div class="list-wrapper">
       <div
-        v-for="(post,index) in posts"
+        v-for="(post, index) in posts"
         :key="index"
         v-show="filteredPostsIds.indexOf(index) > -1"
         :class="{'active': activeItemId == post.id}"
@@ -18,7 +18,6 @@
           :active-post-id="activeItemId"
           :title="post.title"
           :text="post.body"
-          :index="post.id"
           @commentButtonClick="setActiveItemId"
         />
       </div>
@@ -44,7 +43,6 @@ export default {
   methods: {
     setActiveItemId(index) {
       this.activeItemId = index;
-      console.log(this.activeItemId);
     },
     getPost: function() {
       const myRequest = new Request(

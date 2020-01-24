@@ -21,8 +21,7 @@ export default {
   },
   data() {
     return {
-      comments: [],
-      additionalPostStatus: false
+      comments: []
     };
   },
   props: {
@@ -42,10 +41,6 @@ export default {
       type: String,
       default:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat quis deserunt architecto consectetur, repellendus deleniti laudantium, magnam odio laboriosam maiores magni corrupti debitis nostrum quibusdam distinctio beatae praesentium aperiam."
-    },
-    index: {
-      type: Number,
-      default: 0
     }
   },
 
@@ -62,7 +57,6 @@ export default {
         .then(data => {
           this.$emit("commentButtonClick", this.postId);
           this.comments = data;
-          this.additionalPostStatus = true;
         })
         .catch(error => {
           console.log(error);
